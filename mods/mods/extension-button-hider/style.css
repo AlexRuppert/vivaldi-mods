@@ -1,0 +1,7 @@
+.extension-button-hider:hover {
+  background-color: var(--colorAccentBgDark);
+}
+
+.extensions-wrapper > .hider-hide {
+  display: none;
+}

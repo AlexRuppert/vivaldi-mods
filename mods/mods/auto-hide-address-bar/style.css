@@ -1,0 +1,70 @@
+body {
+    --tab-container-height: 38px;
+    --address-bar-height: 35px;
+}
+
+.address-top .toolbar.toolbar-addressbar:after {
+    display: none;
+}
+
+.toolbar.toolbar-addressbar {
+    box-shadow: 0 0 3px black;
+    z-index: 2;
+    background-color: var(--colorBg);
+    left: 0;
+    right: 0;
+}
+
+.address-top .toolbar.toolbar-addressbar {
+    transition: top 0.06s ease-in-out;
+    position: absolute;
+    top: calc(var(--address-bar-height)*-1);
+}
+
+.address-top .toolbar.toolbar-addressbar:hover,
+.address-top .toolbar.toolbar-addressbar.shown,
+.address-top .toolbar.toolbar-addressbar.focused {
+    top: 0;
+}
+
+.address-bottom .toolbar.toolbar-addressbar {
+    transition: bottom 0.06s ease-in-out;
+    position: fixed;
+    bottom: calc(var(--address-bar-height)*-1);
+}
+
+.address-bottom.tabs-bottom .toolbar.toolbar-addressbar {
+    bottom: 0;
+}
+
+
+.address-bottom .toolbar.toolbar-addressbar:hover,
+.address-bottom .toolbar.toolbar-addressbar.shown,
+.address-bottom .toolbar.toolbar-addressbar.focused {
+    bottom: var(--tab-container-height);
+}
+
+.address-top #addressfield-hover-placeholder {
+    pointer-events: none;
+}
+
+.address-bottom #addressfield-hover-placeholder {
+    opacity: 0;
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.address-bottom.tabs-bottom #addressfield-hover-placeholder {
+    pointer-events: none;
+}
+
+.address-bottom.tabs-bottom #tabs-container {
+    z-index: 3;
+}
+
+.tab-position .tab.active .tab-header .progress-indicator {
+    visibility: visible;
+}

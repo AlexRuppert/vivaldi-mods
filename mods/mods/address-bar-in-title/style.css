@@ -1,0 +1,15 @@
+#header {
+    min-height: 35px;
+}
+
+.win .toolbar.toolbar-addressbar{
+    margin-right: 160px;
+}
+
+.mac .toolbar.toolbar-addressbar{
+    margin-left: 160px;
+}
+
+.address-top .toolbar.toolbar-addressbar:after {
+    display: none;
+}

@@ -1,0 +1,3 @@
+.toolbar.toolbar-addressbar .extensions-wrapper .button-toolbar.browserAction-button {
+    -webkit-filter: grayscale(100%) contrast(80%);
+}

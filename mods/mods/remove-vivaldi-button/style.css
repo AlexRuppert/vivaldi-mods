@@ -1,0 +1,6 @@
+button.vivaldi {
+    display: none;
+}
+.win #tabs-container.top {
+    padding-left:0;
+}

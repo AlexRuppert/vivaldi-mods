@@ -1,0 +1,8 @@
+.matrix-canvas {
+  position: absolute;
+  mix-blend-mode: screen;
+}
+
+.startpage-content > div {
+  z-index: 1;
+}

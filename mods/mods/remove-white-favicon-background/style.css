@@ -1,0 +1,4 @@
+.tab-position .tab.active .tab-header .favicon, #switch .webpanelsgroup button.webviewbtn img {
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
